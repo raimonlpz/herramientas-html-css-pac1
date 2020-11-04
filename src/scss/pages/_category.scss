@@ -1,0 +1,59 @@
+/* header */
+.header {
+    &-content {
+        width: 80%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &-img {
+            width: 120%;
+            text-align: center;
+            align-self: center;
+            margin-left: -10%;
+
+            img {
+                width: 40%;
+                border-radius: 2rem;
+                box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
+                transition: box-shadow .5s;
+
+                &:hover {
+                    box-shadow: 0 6rem 10rem rgba(0, 0, 0, .8);
+                }
+            }
+        }
+
+        &-text {
+            text-align: center;
+            align-self: center;
+            font-size: size(md);
+            margin-left: -15%;
+            width: 100%;
+            line-height: 2.7rem;
+
+            p {
+                padding-bottom: 2rem;
+            }
+            span {
+                font-size: size(lg);
+                font-style: italic;
+                font-weight: 200;
+                color: color(secondary);
+            }
+        }
+    }
+}
+/* end of header */
+
+/* showcase */
+.showcase {
+    @include showcase-card-styled(33.3333%);
+
+    &-card-content-brief {
+        font-size: size(xs);
+        font-weight: 200;
+        font-style: italic;
+    }
+}
+/* end of showcase */

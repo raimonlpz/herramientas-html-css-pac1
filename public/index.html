@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="../src/scss/main.scss">
+    <link rel="shortcut icon" href="../src/assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/4ac4cb59fd.js" crossorigin="anonymous"></script>
+    <title>PAC1 - Bookstore</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header" id="home">
+        <div class="header-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fdeebf" fill-opacity="1" d="M0,224L14.1,208C28.2,192,56,160,85,138.7C112.9,117,141,107,169,133.3C197.6,160,226,224,254,213.3C282.4,203,311,117,339,112C367.1,107,395,181,424,224C451.8,267,480,277,508,261.3C536.5,245,565,203,593,165.3C621.2,128,649,96,678,117.3C705.9,139,734,213,762,213.3C790.6,213,819,139,847,90.7C875.3,43,904,21,932,53.3C960,85,988,171,1016,170.7C1044.7,171,1073,85,1101,74.7C1129.4,64,1158,128,1186,138.7C1214.1,149,1242,107,1271,128C1298.8,149,1327,235,1355,234.7C1383.5,235,1412,149,1426,106.7L1440,64L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z"></path></svg>
+            <div class="header-title">
+                <h1 class="header-title-text"><span>Happy</span> Bookstore<i class="far fa-registered"></i></h1>
+            </div>
+            <div class="header-videos">
+                <div class="header-videos-1">
+                    <video autoplay loop muted plays-inline>
+                        <source src="../src/assets/vid2.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 Video element.
+                    </video>
+                </div>
+                <div class="header-videos-2" >
+                    <video autoplay loop muted plays-inline>
+                        <source src="../src/assets/vid1.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 Video element.
+                    </video>
+                </div>
+                <div class="header-videos-3">
+                    <video autoplay loop muted plays-inline>
+                        <source src="../src/assets/vid3.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 Video element.
+                    </video>
+                </div>
+                <div class="header-videos-4">
+                    <video autoplay loop muted plays-inline>
+                        <source src="../src/assets/vid4.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 Video element.
+                    </video>
+                </div>
+            </div>
+            <div class="header-social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- hamburger nav menu -->
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu" hidden>
+        <div class="nav-menu">
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-menu-wrapper-list">
+                    <li class="nav-menu-wrapper-list-item"><a href="index.html#home">Home</a></li>
+                    <li class="nav-menu-wrapper-list-item">Categories</li>
+                        <ul class="nav-menu-wrapper-list-item-nested">
+                            <li><a href="categories/category_one.html">Science Fiction</a></li>
+                            <li><a href="categories/category_two.html">Romance</a></li>
+                        </ul>
+                    <li class="nav-menu-wrapper-list-item"><a href="index.html#showcase">Showcase</a></li>
+                    <li class="nav-menu-wrapper-list-item"><a href="index.html#about-us">About Us</a></li>
+                    <li class="nav-menu-wrapper-list-item"><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <label for="menu" class="burger-icon">
+            <i class="fas fa-hamburger"></i>
+        </label>
+        <label for="menu" class="cross-icon">
+            <i class="fas fa-times"></i>
+        </label>
+    </div>
+    <!-- end of hamburger nav menu -->
+
+    <!-- categories -->
+    <section class="categories" id="categories">
+        <div class="categories-title">Categories</div>
+        <div class="categories-wrapper">
+            <div class="categories-content">
+                <a href="categories/category_one.html"><h1 class="categories-content-title">Science Fiction <span>🤖</span></h1></a>
+                <a href="categories/category_one.html"><img class="categories-content-image" src="../src/assets/scifi.jpg" alt="Sci-Fi"></a>
+            </div>
+            <div class="categories-content">
+                <a href="categories/category_two.html"><h1 class="categories-content-title">Romance <span>💕</span></h1></a>
+                <a href="categories/category_two.html"><img class="categories-content-image" src="../src/assets/romance.jpg" alt="Romance"></a>
+            </div>
+            <div class="categories-content">
+                <a href="index.html#categories"><h1 class="categories-content-title">History <span>🏰</span></h1></a>
+                <a href="index.html#categories"><img class="categories-content-image" src="../src/assets/history.jpg" alt="History"></a>
+            </div>
+        </div>
+    </section>
+    <!-- end of categories -->
+
+    <!-- showcase -->
+    <section class="showcase" id="showcase">
+        <div class="showcase-title">Last Books</div>
+        <div class="showcase-wrapper" id="showcase-books"></div>
+    </section>
+    <!-- end of showcase -->
+
+    <!-- about us -->
+    <section class="about-us" id="about-us">
+        <div class="about-us-wrapper">
+            <div class="about-us-title">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-us-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio fugiat nemo vero. Obcaecati illum accusamus eum excepturi enim esse expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi ipsam earum reiciendis sapiente error beatae iure quae id ut!</p>
+                <i class="fab fa-pagelines"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi tempora sequi sapiente cupiditate asperiores aut vero eos reiciendis ad harum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nostrum, maiores sunt necessitatibus placeat minus voluptatem labore vel id. Odit?</p>
+            </div>
+            <div class="about-us-images">
+                <div class="about-us-images-1">
+                    <img src="../src/assets/photo2.jpg" alt="Reading in the beach"/>
+                </div>
+                <div class="about-us-images-2">
+                    <img src="../src/assets/photo1.jpg" alt="Book portrait"/>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-wrapper">
+            <div class="footer-navigation">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="index.html#showcase">Showcase</a></li>
+                    <li><a href="index.html#about-us">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <form>
+                    <label>Get in touch with us</label>
+                        <input type="text" placeholder="Your Email">
+                        <button type="button"><i class="fas fa-check"></i></button>
+                </form>
+            </div>
+            <div class="footer-arrow"><a href="index.html#home"><i class="fas fa-arrow-circle-up"></i></a></div>
+        </div>
+        <div class="footer-copyright">&copy; 2020. Happy Bookstore. All Rights Reserved</div>
+    </footer>
+    <!-- end of footer -->
+    <script src="../src/app.js"></script>
+</body>
+</html>

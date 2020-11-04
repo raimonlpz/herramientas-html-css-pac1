@@ -1,0 +1,58 @@
+@mixin icon-animated {
+    transition: all 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+        cursor: pointer;
+        transform: rotateZ(360deg);
+        color: color(tertiary);
+    }
+}
+
+@mixin hamburger-menu-animated {
+    transition: all .6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    &:hover {
+        transform: rotateZ(360deg);
+        opacity: .8;
+    }
+}
+
+@mixin nav-links-styled {
+    a {
+        outline: none;
+        text-decoration: none;
+        color: color(quaternary);
+        transition: all .4s;
+
+        &:hover {
+            color: color(secondary);
+            &:after {
+                content: " ➩"
+            }
+        }
+    }
+}
+
+@mixin title-section-styled($color) {
+    &-title {
+        font-size: size(xl) + 4rem;
+        text-align: center;
+        font-weight: 200;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        color: color($color);
+ 
+        text-shadow: 0 .5rem .6rem rgba(0, 0, 0, .6);;
+    }
+}
+
+@mixin showcase-card-styled($width) {
+    &-card {
+        width: $width;
+        height: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+    }
+}

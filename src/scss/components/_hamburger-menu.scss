@@ -1,0 +1,101 @@
+.hamburger-menu {
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    font-size: size(xl) + 1rem;
+    color: color(tertiary);
+    border: .4rem solid color(tertiary);
+    border-radius: 50%;
+    padding: 1.3rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    transition: all .3s;
+    z-index: 200;
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        background: linear-gradient(rgba(5, 4, 4, 0.99), rgba(56, 85, 90, 0.8)), url("../assets/photo3.jpg") no-repeat 0 50%;
+        opacity: .98;
+        z-index: 400;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
+        transition: width .7s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        &-wrapper {
+           visibility: hidden;
+           opacity: 0;
+           transition: all .4s;
+           margin-left: 50%;
+           margin-top: 50%;
+           transform: translate(-50%, -50%);
+
+           &-list {
+               list-style: none;
+
+               &-item {
+                    font-size: size(xl) + 1.8rem;
+                    font-weight:200;
+                    padding: 2rem;
+                    @include nav-links-styled;
+
+                    &-nested {
+                        margin-left: 6rem;
+                        list-style: none;
+
+                        li {
+                            font-size: size(xl);
+                            padding: .8rem;
+                            @include nav-links-styled;
+                        }
+                    }
+               }
+           }
+        }
+    }    
+
+    .cross-icon {
+        display: none;
+        padding-left: .65rem;
+        padding-right: .65rem;
+
+        i {
+            @include hamburger-menu-animated;
+        }
+    }
+
+    .burger-icon i {
+        @include hamburger-menu-animated;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input:checked + .nav-menu {
+        width: 50%;
+    } 
+
+    input:checked + .nav-menu .nav-menu-wrapper {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    input:checked ~ .burger-icon {
+        display: none;
+    }
+    input:checked ~ .cross-icon {
+        display: block;
+    }
+
+    &:hover {
+        font-size: size(xl) + 1.1rem;
+        padding: 1.4rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+}

@@ -1,0 +1,79 @@
+/* showcase */
+.showcase {
+    background-color: color(secondary);
+    width: 100%;
+    padding: 2rem;
+    @include title-section-styled(primary);
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-card {
+        &-image {
+            width: 20rem;
+            height: 30rem;
+            object-fit: cover;
+            box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
+            border-radius: .5rem;
+            transition: all .2s;
+
+            &:hover {
+                transform: skewY(2deg);
+            }
+        }
+
+        &-content {
+            background-color: color(quaternary);
+            box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
+            border-radius: .9rem;
+            margin-top: 1.5rem;
+            opacity: .8;
+            padding: 1rem;
+            position: relative;
+            transition: all 1.1s;
+
+            &:hover {
+                transform: translateY(-8rem) rotate(15deg);
+                opacity: 1;
+            }
+
+            &-title {
+                font-size: size(lg);
+                font-weight: 300;
+                font-style: italic;
+                color: color(secondary);
+                padding-top: 1.2rem;
+            }
+
+            &-author {
+                font-size: size(xs) + .3rem;
+                font-weight: 100;
+                padding: 1rem;
+            }
+
+            &-price {
+                font-size: size(xl);
+                text-align: end;
+                font-weight: 200;
+                color: color(primary);
+            }
+
+            i {
+                position: absolute;
+                left: 2rem;
+                bottom: 2rem;
+                font-size: size(lg);
+                color: color(primary);
+                transition: all .5s;
+
+                &:hover {
+                    color: color(secondary);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+/* end of showcase */

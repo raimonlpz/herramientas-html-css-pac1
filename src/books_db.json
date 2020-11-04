@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "title": "A Textbook of quantum mechanics",
+        "author": "Piravonu Mathews Mathews",
+        "price": 32.45,
+        "img": "book1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Concepts of modern art",
+        "author": "Tony Richardson",
+        "price": 45.15,
+        "img": "book2.jpg"
+    },
+    { 
+        "id": 3,
+        "title": "Misery",
+        "author": "Stephen King",
+        "price": 14.53,
+        "img": "book3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "A dictionary of ballet terms",
+        "author": "Leo Kersley",
+        "price": 61.21,
+        "img": "book4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Sula",
+        "author": "Toni Morrison",
+        "price": 42.10,
+        "img": "book5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Freakonomics",
+        "author": "Stephen J. Dubner",
+        "price": 33.15,
+        "img": "book6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Double Take",
+        "author": "Catherine Coulter",
+        "price": 19.65,
+        "img": "book7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Dark Justice",
+        "author": "Jack Higgins",
+        "price": 12.95,
+        "img": "book8.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Principles of instrumental analysis",
+        "author": "Donald M. West",
+        "price": 31.25,
+        "img": "book9.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Physical Chemistry",
+        "author": "P.W. Atkins",
+        "price": 11.22,
+        "img": "book10.jpg"
+    },
+    {
+        "id": 11,
+        "title": "His Dark Bond",
+        "author": "Anne Marsh",
+        "price": 14.82,
+        "img": "book11.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Run To Me",
+        "author": "Christy Reece",
+        "price": 32.95,
+        "img": "book12.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "price": 42.12,
+        "img": "book13.jpg"
+    },
+    {
+        "id": 14,
+        "title": "The Invisible Man",
+        "author": "H.G. Wells",
+        "price": 31.15,
+        "img": "book14.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "price": 11.32,
+        "img": "book15.jpg"
+    },
+    {
+        "id": 16,
+        "title": "The Age of Innocence",
+        "author": "Edith Wharton",
+        "price": 10.32,
+        "img": "book16.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Anna Karenin",
+        "author": "Leo Tolstoy",
+        "price": 17.32,
+        "img": "book17.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Far From the Madding Crowd",
+        "author": "Thomas Hardy",
+        "price": 21.05,
+        "img": "book18.jpg"
+    }
+]
