@@ -3,9 +3,12 @@
     top: 5rem;
     left: 5rem;
 
+    a {
+        outline: none;
+    }
+
     i {
         @include icon-animated;
         font-size: size(xl) + 3rem;
-        color: color(primary);
     }
 }

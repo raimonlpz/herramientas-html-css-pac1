@@ -55,19 +55,10 @@ const populateShowcase = () => {
 }
 
 
-// Close nav menu on click any page section
+// UI improve: close nav menu on click any page section
 const closeNavMenu = () => {
     const $navItems = document.querySelectorAll(".nav-menu-wrapper-list-item");
     const $checkBox = document.getElementById("menu");
-
-    /*
-    document.addEventListener('click', e => {
-        if(e.clientX > document.documentElement.clientWidth / 2) {
-            $checkBox.checked = false;
-        }
-    });
-    */
-
     $navItems.forEach($i => {
         $i.addEventListener('click', e => {
             if(e.target.nodeName == 'A') {
@@ -77,7 +68,15 @@ const closeNavMenu = () => {
     });
 }
 
+const init = () => {
+    populateShowcase();
+    closeNavMenu();
+}
 
-populateShowcase();
-closeNavMenu();
+
+init();
+
+
+
+
 

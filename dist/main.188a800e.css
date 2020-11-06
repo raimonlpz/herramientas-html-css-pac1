@@ -81,7 +81,7 @@ html {
 .categories-title {
   font-size: 7rem;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   padding-top: 3rem;
   padding-bottom: 2rem;
   color: #bb4430;
@@ -178,6 +178,7 @@ html {
   grid-row: 1/2;
   padding: 4rem;
   text-align: start;
+  text-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.6);
 }
 .about-us-title h1 {
   font-size: 11rem;
@@ -229,6 +230,12 @@ html {
 }
 
 /* end of about us  */
+/* back-btn */
+.back-category i {
+  color: #231f20;
+}
+
+/* back-btn */
 /* header */
 .header-content {
   width: 80%;
@@ -241,6 +248,7 @@ html {
   text-align: center;
   align-self: center;
   margin-left: -10%;
+  z-index: 10;
 }
 .header-content-img img {
   width: 40%;
@@ -258,6 +266,7 @@ html {
   margin-left: -15%;
   width: 100%;
   line-height: 2.7rem;
+  z-index: 10;
 }
 .header-content-text p {
   padding-bottom: 2rem;
@@ -280,6 +289,11 @@ html {
   align-items: center;
   text-align: center;
 }
+.showcase-card a, .showcase-card a:hover, .showcase-card a:focus, .showcase-card a:active {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
 .showcase-card-content-brief {
   font-size: 1.2rem;
   font-weight: 200;
@@ -287,6 +301,114 @@ html {
 }
 
 /* end of showcase */
+/* back-btn */
+.back-detail i {
+  color: #bb4430;
+}
+
+/* back-btn */
+/* detail-article */
+.detail {
+  width: 100%;
+  background: #231f20;
+  position: relative;
+}
+.detail svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+.detail-wrapper {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  margin: auto;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  gap: 3rem;
+}
+.detail-cover {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+.detail-cover img {
+  width: 35rem;
+  padding: 2.5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  transition: background-color 1.5s;
+}
+.detail-cover img:hover {
+  background-color: #f3dfa2;
+}
+.detail-content {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+.detail-content-title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #f3dfa2;
+}
+.detail-content-author {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4rem;
+  color: #f3dfa2;
+}
+.detail-content-author span {
+  color: #bb4430;
+}
+.detail-content-brief {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #efe6dd;
+}
+.detail-content-brief p {
+  margin-bottom: 2rem;
+  line-height: 2.4rem;
+}
+.detail-content-price {
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #bb4430;
+}
+.detail-morebooks {
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  display: flex;
+  color: #f3dfa2;
+  z-index: 50;
+}
+.detail-morebooks a {
+  outline: none;
+}
+.detail-morebooks h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.detail-morebooks img {
+  background-color: #231f20;
+  padding: 3rem;
+  margin: 1rem;
+  width: 22rem;
+  height: 100%;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  transition: background-color 1.5s;
+}
+.detail-morebooks img:hover {
+  background-color: #f3dfa2;
+}
+
+/* end of detail-article */
 .header {
   background-color: #efe6dd;
   width: 100%;
@@ -443,10 +565,12 @@ html {
   top: 5rem;
   left: 5rem;
 }
+.back-btn a {
+  outline: none;
+}
 .back-btn i {
   transition: all 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
   font-size: 6rem;
-  color: #231f20;
 }
 .back-btn i:hover {
   cursor: pointer;
@@ -456,14 +580,14 @@ html {
 
 /* showcase */
 .showcase {
-  background-color: #bb4430;
+  background: linear-gradient(to top, #231f20, #bb4430);
   width: 100%;
   padding: 2rem;
 }
 .showcase-title {
   font-size: 7rem;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   padding-top: 3rem;
   padding-bottom: 2rem;
   color: #231f20;
@@ -477,6 +601,7 @@ html {
   height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 1rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
   transition: all 0.2s;
