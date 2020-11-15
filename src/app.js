@@ -55,7 +55,7 @@ const populateShowcase = () => {
 }
 
 
-// UI improve: close nav menu on click any page section
+// UI improve: close nav menu on user clicks any page section
 const closeNavMenu = () => {
     const $navItems = document.querySelectorAll(".nav-menu-wrapper-list-item");
     const $checkBox = document.getElementById("menu");
