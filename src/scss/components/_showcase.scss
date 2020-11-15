@@ -7,9 +7,27 @@
 
     &-wrapper {
         display: flex;
+        @media (max-width: 1000px) {
+            & {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 600px) {
+            & {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     &-card {
+        @media (max-width: 600px) {
+            & {
+                width: 80%;
+            }
+        }
+        
         &-image {
             width: 20rem;
             height: 30rem;
@@ -45,6 +63,12 @@
                 font-style: italic;
                 color: color(secondary);
                 padding-top: 1.2rem;
+
+                @media (max-width: 1200px) {
+                    & {
+                        font-size: size(md);
+                    }
+                }
             }
 
             &-author {
@@ -58,6 +82,12 @@
                 text-align: end;
                 font-weight: 200;
                 color: color(primary);
+
+                @media (max-width: 1200px) {
+                    & {
+                        font-size: size(md);
+                    }
+                }
             }
 
             i {
@@ -68,13 +98,18 @@
                 color: color(primary);
                 transition: all .5s;
 
+                @media (max-width: 1200px) {
+                    & {
+                        font-size: size(sm);
+                    }
+                }
+
                 &:hover {
                     color: color(secondary);
                     cursor: pointer;
                 }
             }
         }
-
     }
 }
 /* end of showcase */

@@ -26,7 +26,12 @@
         &:hover {
             color: color(secondary);
             &:after {
-                content: " ➩"
+                content: " ➩",
+            } 
+            @media (max-width: 1000px) {
+                &:after {
+                    content: "",
+                } 
             }
         }
     }
@@ -42,6 +47,22 @@
         color: color($color);
  
         text-shadow: 0 .5rem .6rem rgba(0, 0, 0, .6);
+
+        @media (max-width: 1200px) {
+            & {
+                font-size: size(xl) + 3rem;
+            }
+        } 
+        @media (max-width: 1000px) {
+            & {
+                font-size: size(xl) + 2rem;
+            }
+        }
+        @media (max-width: 800px) {
+            & {
+                font-size: size(xl) + 1rem;
+            }
+        }
     }
 }
 

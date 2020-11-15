@@ -21,7 +21,6 @@
 
     &-wrapper {
         width: 70%;
-        // height: min-content;
         display: grid;
         grid-template-columns: repeat(2, minmax(min-content, max-content));
         grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -29,6 +28,13 @@
         padding-top: 8rem;
         padding-bottom: 5rem;
         gap: 3rem;
+        @media (max-width: 1200px) {
+            & {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     }
 
     &-cover {
@@ -40,6 +46,12 @@
             box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
             border-radius: .5rem;
             transition: background-color 1.5s;
+            @media (max-width: 800px) {
+                & {
+                    width: 25rem;
+                }
+            }
+    
 
             &:hover {
                 background-color: color(quaternary);
@@ -56,6 +68,11 @@
             font-weight: 800;
             margin-bottom: .5rem;
             color: color(quaternary);
+            @media (max-width: 800px) {
+                & {
+                    font-size: size(xl) + 1rem;
+                }
+            }
         }
         &-author {
             font-size: size(md);
@@ -71,6 +88,11 @@
             font-size: size(md);
             font-weight: 200;
             color: color(light);
+            @media (max-width: 800px) {
+                & {
+                    font-size: size(xs) + .5rem;
+                }
+            }
 
             p {
                 margin-bottom: 2rem;
@@ -91,7 +113,12 @@
         grid-row: 2 / -1;
         display: flex;
         color: color(quaternary);
-        z-index: 50;
+        z-index: 5;
+        @media (max-width: 700px) {
+            & {
+                flex-direction: column;
+            }
+        }
 
         a {
             outline: none;
@@ -107,7 +134,7 @@
             padding: 3rem;
             margin: 1rem;
             width: 22rem;
-            height: 100%;
+            height: 95%;
             box-shadow: 0 3rem 5rem rgba(0, 0, 0, .6);
             border-radius: .5rem;
             transition: background-color 1.5s;
