@@ -1,4 +1,4 @@
-# herramientas-html-css-pac1 
+# herramientas-html-css-pac1 & pac2
 
 UOC (Universitat Oberta de Catalunya)
 M4.257 - Herramientas HTML y CSS aula 1
