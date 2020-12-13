@@ -18,6 +18,23 @@
         z-index: 10;
         color: color(primary);
         padding: 4rem;
+        display: flex;
+
+        &-logo{
+            height: 60px;
+            margin: 1rem;
+
+            @media (max-width: 900px) {
+                & {
+                    height: 40px;
+                }
+            }
+            @media (max-width: 700px) {
+                & {
+                    height: 25px;
+                }
+            }
+        }
 
         &-text {
             font-size: size(xl) + 5rem;

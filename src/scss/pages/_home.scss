@@ -309,12 +309,15 @@
         &-1 {
             transform: translateY(-5rem);
             opacity: .95;
+            clip-path: polygon(16% 5%, 50% 2%, 88% 30%, 87% 82%, 52% 96%, 16% 70%, 14% 30%);
         }
 
         &-2 {
             transform: translateY(-50.3rem) rotate(15deg);
             opacity: .95;
+            clip-path: polygon(29% 5%, 71% 1%, 88% 30%, 83% 73%, 69% 100%, 18% 100%, 13% 70%, 14% 30%);
             transition: all 2.5s;
+
             @media (max-width: 1300px) {
                 & {
                     transform: translateY(-40.3rem) rotate(15deg);
