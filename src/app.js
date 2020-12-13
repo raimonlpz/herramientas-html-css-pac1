@@ -1,6 +1,6 @@
 // Display random books in showcase section every time user reloads Home page.
 import fs from 'fs';
-import imgs from './*.jpg';
+import imgs from '*.jpg';
 
 const booksJson = fs.readFileSync(__dirname + '/books_db.json', 'utf8');
 const booksParsed = JSON.parse(booksJson);
