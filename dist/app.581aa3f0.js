@@ -137,14 +137,14 @@ module.exports = "/book15.e263c177.jpg";
 module.exports = "/book16.84bd2d83.jpg";
 },{}],"../src/assets/book17.jpg":[function(require,module,exports) {
 module.exports = "/book17.f0949d94.jpg";
-},{}],"../src/assets/book2.jpg":[function(require,module,exports) {
-module.exports = "/book2.c466cb16.jpg";
 },{}],"../src/assets/book18.jpg":[function(require,module,exports) {
 module.exports = "/book18.964d3eba.jpg";
-},{}],"../src/assets/book4.jpg":[function(require,module,exports) {
-module.exports = "/book4.c28ce4b6.jpg";
+},{}],"../src/assets/book2.jpg":[function(require,module,exports) {
+module.exports = "/book2.c466cb16.jpg";
 },{}],"../src/assets/book3.jpg":[function(require,module,exports) {
 module.exports = "/book3.b8ce4807.jpg";
+},{}],"../src/assets/book4.jpg":[function(require,module,exports) {
+module.exports = "/book4.c28ce4b6.jpg";
 },{}],"../src/assets/book5.jpg":[function(require,module,exports) {
 module.exports = "/book5.fdd062b4.jpg";
 },{}],"../src/assets/book6.jpg":[function(require,module,exports) {
@@ -172,10 +172,10 @@ module.exports = {
   "book15": require("./book15.jpg"),
   "book16": require("./book16.jpg"),
   "book17": require("./book17.jpg"),
-  "book2": require("./book2.jpg"),
   "book18": require("./book18.jpg"),
-  "book4": require("./book4.jpg"),
+  "book2": require("./book2.jpg"),
   "book3": require("./book3.jpg"),
+  "book4": require("./book4.jpg"),
   "book5": require("./book5.jpg"),
   "book6": require("./book6.jpg"),
   "book7": require("./book7.jpg"),
@@ -185,7 +185,7 @@ module.exports = {
   "photo2": require("./photo2.jpg"),
   "photo3": require("./photo3.jpg")
 };
-},{"./book1.jpg":"../src/assets/book1.jpg","./book10.jpg":"../src/assets/book10.jpg","./book11.jpg":"../src/assets/book11.jpg","./book12.jpg":"../src/assets/book12.jpg","./book13.jpg":"../src/assets/book13.jpg","./book14.jpg":"../src/assets/book14.jpg","./book15.jpg":"../src/assets/book15.jpg","./book16.jpg":"../src/assets/book16.jpg","./book17.jpg":"../src/assets/book17.jpg","./book2.jpg":"../src/assets/book2.jpg","./book18.jpg":"../src/assets/book18.jpg","./book4.jpg":"../src/assets/book4.jpg","./book3.jpg":"../src/assets/book3.jpg","./book5.jpg":"../src/assets/book5.jpg","./book6.jpg":"../src/assets/book6.jpg","./book7.jpg":"../src/assets/book7.jpg","./book8.jpg":"../src/assets/book8.jpg","./book9.jpg":"../src/assets/book9.jpg","./photo1.jpg":"../src/assets/photo1.jpg","./photo2.jpg":"../src/assets/photo2.jpg","./photo3.jpg":"../src/assets/photo3.jpg"}],"../src/app.js":[function(require,module,exports) {
+},{"./book1.jpg":"../src/assets/book1.jpg","./book10.jpg":"../src/assets/book10.jpg","./book11.jpg":"../src/assets/book11.jpg","./book12.jpg":"../src/assets/book12.jpg","./book13.jpg":"../src/assets/book13.jpg","./book14.jpg":"../src/assets/book14.jpg","./book15.jpg":"../src/assets/book15.jpg","./book16.jpg":"../src/assets/book16.jpg","./book17.jpg":"../src/assets/book17.jpg","./book18.jpg":"../src/assets/book18.jpg","./book2.jpg":"../src/assets/book2.jpg","./book3.jpg":"../src/assets/book3.jpg","./book4.jpg":"../src/assets/book4.jpg","./book5.jpg":"../src/assets/book5.jpg","./book6.jpg":"../src/assets/book6.jpg","./book7.jpg":"../src/assets/book7.jpg","./book8.jpg":"../src/assets/book8.jpg","./book9.jpg":"../src/assets/book9.jpg","./photo1.jpg":"../src/assets/photo1.jpg","./photo2.jpg":"../src/assets/photo2.jpg","./photo3.jpg":"../src/assets/photo3.jpg"}],"../src/app.js":[function(require,module,exports) {
 "use strict";
 
 var _fs = _interopRequireDefault(require("fs"));
@@ -288,7 +288,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57355" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53691" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
